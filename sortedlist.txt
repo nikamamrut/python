@@ -1,0 +1,12 @@
+#check if the items in the list are sorted in ascending or descending order andprint suitable messege according to it.otherwise print"items in list are not sorted"
+test_list = [10, 5, 4, 3, 1]
+print ("Original list : " + str(test_list))
+flag = 0
+test_list1 = test_list[:]
+test_list1.sort(reverse = True)
+if (test_list1 == test_list):
+    flag = 1
+if (flag) :
+    print ("Yes, List is sorted.")
+else :
+    print ("No, List is not sorted.")

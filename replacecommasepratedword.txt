@@ -1,0 +1,14 @@
+#write a python program to replace comma-seprated words with hyphens and print hyphen-seprated words in ascending order
+if __name__ == '__main__':
+
+    str = "Amrut nikam"
+
+    for i in range(0, len(str), 1):
+
+        if (str[i] == ' '):
+            str = str.replace(str[i], '-')
+
+    print(str)
+
+
+

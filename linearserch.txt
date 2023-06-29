@@ -1,0 +1,21 @@
+#write python program to conduct a linear search for a given key number in the list and report success or failure
+
+
+def search(List, n):
+
+    for i in range(len(List)):
+        if List[i] == n:
+            return True
+    return False
+
+
+# list which contains both string and numbers.
+List = [1, 2, 'sachin', 4, 'Geeks', 6]
+
+
+n = 'Geeks'
+
+if search(List, n):
+    print("sucess")
+else:
+    print("failure")

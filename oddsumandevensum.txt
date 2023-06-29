@@ -1,0 +1,30 @@
+def digit_sum(sub, even_sum, odd_sum):
+    if not sub:
+         return (even_sum, odd_sum)
+    else:
+        ele = sub.pop()
+        
+    if int(ele) % 2 == 0:
+        even_sum += int(ele)
+    else:
+        odd_sum += int(ele)
+    return digit_sum(sub, even_sum, odd_sum)
+
+
+test_list =list(range(0,101))
+
+
+# printing original list
+print("The original list is : " + str(test_list))
+
+even_sum = 0
+odd_sum = 0
+
+for sub in test_list:
+    sub = list(str(sub))
+    even_sum, odd_sum = digit_sum(sub, even_sum, odd_sum)
+
+
+print("Odd digit sum : " + str(odd_sum))
+print("Even digit sum : " + str(even_sum))
+
